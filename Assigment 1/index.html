@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 4339 Assigment 1</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Using internal style for the form labels 
+    This helps the form align and look cleaner
+    Source: https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html -->
+    <style>
+        
+    label {
+    display: inline-block;
+    width:130px;
+    text-align: right;
+    font-family: Verdana;
+    font-size: small;
+    }
+
+    h1{
+        font-family: Verdana;
+    }
+
+    /* inline style for weekday list */
+    ul#weekdays li {
+        display:inline;
+    }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section>
+
+            <header>
+                <h1>Registration Form</h1>
+            </header>
+
+            <form onSubmit = "return checkPassword(this)"> <!-- Tells page to run the checkPassword function when submit button is clicked -->
+                
+                <!-- Inputs for names -->
+                <label for="fname">First name:</label>
+                <input type="text" required="required" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" required="required" id="lname" name="lname"><br><br>
+
+                <!-- Input for birthday -->
+                <label for="birthday">Birthday:</label>
+                <input type="date" required="required" id="birthday" name="birthday"><br><br>
+
+                <!-- Input for gender -->
+                <label for="gender">Gender:</label>
+                <select name="gender" required="required" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <!-- Input for email -->
+                <label for="email">Email:</label>
+                <input type="email" required="required" id="email" name="email"><br><br>
+
+                <!-- Input for password -->
+                <label for="pwd">Password:</label>
+                <input type="password" required="required" id="pwd" name="pwd"><br><br>
+
+                <label for="confirmpwd">Confirm Password:</label>
+                <input type="password" required="required" id="confirmpwd" name="confirmpwd"><br><br>
+                <script> 
+                    // Function used to check if the passwords match
+                    //Uses javascript 
+                    //Source: https://www.geeksforgeeks.org/password-matching-using-javascript/
+
+                    function checkPassword(form) { 
+                        password1 = form.pwd.value; //pulls first pwd value
+                        password2 = form.confirmpwd.value; //pulls confirmpwd value
+            
+                        if (password1 != password2) { 
+                            alert ("\nPasswords must match!") 
+                            return false; 
+                        } 
+                        else{ 
+                            return true; 
+                        } 
+                    } 
+                </script> 
+
+
+                <input type="submit" value="Submit"><br><br>
+            </form>
+            
+        </section>
+
+        <section>
+            <table>
+
+                <h1>Sample Program Schedule</h1>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Run</td>
+                    <td>Breakfast</td>
+                    <td>Yoga</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>Run</td>
+                    <td>Breakfast</td>
+                    <td>Yoga</td>
+                    <td>Breakfast</td>
+                    <td>Hike</td>
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Yoga</td>
+                    <td>Lunch</td>
+                    <td>Yoga</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>Run</td>
+                    <td>Lunch</td>
+                    <td>Run</td>
+                    <td>Lunch</td>
+                    <td>Run</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <ul id="weekdays">
+                <li>Monday</li>
+                <li>Tuesday</li>
+                <li>Wednesday</li>
+                <li>Thursday</li>
+                <li>Friday</li>
+                <li>Saturday</li>
+                <li>Sunday</li>
+            </ul>
+        </footer>
+
+    </main>
+</body>
+</html>

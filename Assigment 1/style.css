@@ -1,0 +1,29 @@
+/* CSS for the table */
+table, th, td, tr {
+    border-bottom: 1px solid rgb(153, 153, 153);
+    border-collapse: collapse;
+  }
+
+  th, td, tr {
+    padding: 5px;
+  }
+
+  th, td{
+    font-family: Verdana;
+    font-size: small;
+  }
+
+  th{
+    color: red;
+  }
+
+  tr:hover {
+    background-color: #f1a9a9;
+  }
+
+  /* header background image set 
+   img source: https://pngio.com/PNG/a42851-pink-polka-dot-background.html */
+  header {
+    background-image: url(pink-polka-dot-background.jpg);
+    height: 60px;
+  }
