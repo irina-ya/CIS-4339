@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 4339 Assigment 2</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="CalcPayment.js"></script>
+    
+
+    
+</head>
+<body>
+    <div class="info_form">
+    <form>
+        <!-- Basic curreny input from: https://stackoverflow.com/questions/24163889/html5-input-for-money-currency/28502009 -->
+
+        <!-- Input for name -->
+        <label for="name">Full Name:</label>
+        <input type="text" required="required" id="name" name="name"><br><br>
+
+        <!-- Input for acct num -->
+        <label for="acct_num">Account Number:</label>
+        <input type="text" id="acct_num" name="acct_num"><br><br>
+
+        <!-- Input for down payment -->
+        <label for="down_pay">Down Payment:</label>
+        <input type="number" min="1" required="required" step="any" id="down_pay" name="down_pay"><br><br>
+
+        <!-- Input for interest rate-->
+        <label for="rate">Interest rate:</label>
+        <input type="number" id="rate" required="required" name="rate"><br><br>
+
+        <!-- Input for loan amount -->
+        <label for="loan_amt">Loan Amount:</label>
+        <input type="number" min="1" step="any" id="loan_amt" name="loan_amt"><br><br>
+            
+        
+        <!-- Input for terms-->
+        <label for="terms">Terms (months):</label>
+        <input type="number" min="1" id="terms" name="terms"><br><br>
+
+        <div class=button><input type="button" value="View Your Monthy Payments" id="btnsubmit" onclick=CalcPayment()></div>
+    </form>
+    </div>
+    
+    <div class="calc_display">
+        <label for="name">Your Name:</label><br><span id="display_name"></span><br><br>
+        <label for="acct_num">Total Price:</label><br><span id="total_price"></span><br><br>
+        <label for="monthly_payment">Your Monthly Payment:</label><br><span id="monthly_payment"></span><br><br>
+    </div>
+</body>
