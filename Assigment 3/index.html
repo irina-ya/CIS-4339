@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 4339 Assigment 3</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="tennis.js"></script>
+        
+</head>
+<body>
+    <div class="info_form">
+    <form>
+        
+        <label for="player1">Name of Player 1:</label>
+        <input type="text" required="required" id="player1" name="player1"><br><br>
+
+        <label for="player2">Name of Player 2:</label>
+        <input type="text" required="required" id="player2" name="player2"><br><br>
+
+        <div class=button><input type="button" value="Play Game!" id="btnsubmit" onclick="createPlayers(document.getElementById('player1').value, document.getElementById('player2').value)"></div>
+    </form>
+    </div>
+    
+    <div class="display_result">
+        <label for="sets_won1">Score:</label><br><span id="sets_won1"></span><br>
+        <span id="sets_won2"></span><br><br>
+        <label for="won_game">Winner:</label><br><span id="won_game"></span><br><br>
+    </div>
+</body>

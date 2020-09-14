@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(169, 243, 194);
+}
+
+div {
+    box-sizing: border-box;
+    display: inline;
+    font-family: Verdana;
+    font-size: small;    
+}
+
+form input[type='button']  {
+    width: auto;
+    float: right;
+    margin-right: 65px;
+    
+}
+
+.info_form{
+    float: left;
+    margin-right: 50px;
+}
+
+
+.display_result label {
+    font-weight: bold;
+}
+
+.info_form label {
+    display: inline-block;
+    width:130px;
+    text-align: right;
+    font-family: Verdana;
+    font-size: small;
+    }
