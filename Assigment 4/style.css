@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1 {
+    text-align: justify;
+}
+
+#flag_div {
+    height: auto;
+    width: auto;
+    
+    display:none;
+  }
+
+body {
+    font-family: Helvetica;
+    font-size: 15px;
+  }
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+    border: 1px solid #333;
+}
+
+  .main-container {
+    width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+  }
+
+#button{
+    display: inline;
+}
+
+
+  .search_div{
+    width: 25%;
+    height: 200px;
+    float: left;
+  }
+
+  .display_result {
+    width: 30%;
+    margin-left: 25%;
+    
+  }

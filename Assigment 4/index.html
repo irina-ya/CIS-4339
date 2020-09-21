@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 4339 Assigment 4</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<script src="countries.js"></script>
+  
+<div class="container">
+    <h1>Country Look Up Through RestCountries API</h1>  
+    <div class="search_div">
+
+        <label for="regions">Search by Region:</label>
+        <select name="regions_list" id="regions_list" onchange="displayby_region()">
+        </select><br><br>
+
+        <label for="regions">Search by Country Name:</label>
+        <input type="text" id="country_name" name="country_name">
+        <button type="button" id=button onclick="displayby_name()">Search</button>
+    </div>
+
+    <div class="display_result">
+        <div id="flag_div">
+            
+        </div>
+        <h3 id="selected_region"></h3>
+        <p id="country_capital"></p>
+        <p id="map_link"></p>
+    </div>
+
+        
+        
+</div>
+
+</body>
+
+
+
+</html>
