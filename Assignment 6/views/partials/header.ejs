@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Quake DB</title>
+</head>
+<div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/add" method="GET">Add an Earthquake</a>
+    <a href="/delete" method="POST">Delete an Earthquake</a>
+
+    <form class="search_form" action="/result" method="POST">
+        <label id="search_label" for="id">Search Earthquakes by ReasearchID:</label>
+        <select name="id" id="id">
+            <option value="none" selected></option>
+            <%if (quake.length >0){ %>
+            <% quake.forEach(function(row){ %>
+            <option value='<%= row.id %>'><%= row.id %></option>
+            <% }) }%>
+        </select>  
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<body>

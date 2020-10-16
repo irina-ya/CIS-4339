@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Quake DB</title>
+</head>
+<div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/add" method="GET">Add an Earthquake</a>
+    <a href="/delete" method="POST">Delete an Earthquake</a>
+</div>
+
+<body>
+<h3>Search Results:</h3>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>ReasearchID</th>
+                <th>Time</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Depth</th>
+                <th>Magnitude</th>
+                <th>Mag Type</th>
+                <th>Gap</th>
+                <th>Place</th>
+                <th>Depth Error</th>
+                <th>MagError</th> 
+                <th>Location Source</th> 
+                <th>Mag Source</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><%= search[0].id %></td>
+              <td><%= search[0].time %></td>
+              <td><%= search[0].latitude %></td>
+              <td><%= search[0].longitude %></td>
+              <td><%= search[0].depth %></td>
+              <td><%= search[0].mag %></td>
+              <td><%= search[0].magType %></td>
+              <td><%= search[0].gap %></td>
+              <td><%= search[0].place %></td>
+              <td><%= search[0].depthError %></td>
+              <td><%= search[0].magError %></td>
+              <td><%= search[0].locationSource %></td>
+              <td><%= search[0].magSource %></td>
+            </tr>
+           
+          </tbody>
+        
+
+    </table>
+</div>
+
+<%- include('partials/footer.ejs') -%>

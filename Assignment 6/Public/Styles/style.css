@@ -1,0 +1,92 @@
+*{
+    font-family: Verdana;
+}
+
+#footer_p{
+  font-size : small;
+  font-style: italic;
+}
+
+.container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+table, th, td {
+    align-self: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+  }
+
+thead {
+    background-color: rgb(150, 202, 236);
+}
+
+label {
+    display: inline-block;
+    width:200px;
+    text-align: right;
+    font-family: Verdana;
+    font-size: small;
+    }
+
+.del_quake{
+  text-align: center;
+  width:auto;
+}
+
+.del_selector{
+  padding-top: 25px;
+}
+
+.form_earthquake{
+    padding-top: 25px;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    margin-left : 25%
+}
+
+tr:nth-child(even) {background-color: #8e9fa7;}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .search_form{
+    float: right;
+    padding: 14px 16px;
+    color: #f2f2f2;
+  }
+
+  #search_label{
+    width: 500px;
+    display: inline;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(150, 202, 236);
+    color: white;
+  }

@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') -%>
+<h3>Current Earthquake Table:</h3>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>ReasearchID</th>
+                <th>Time</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Depth</th>
+                <th>Magnitude</th>
+                <th>Mag Type</th>
+                <th>Gap</th>
+                <th>Place</th>
+                <th>Depth Error</th>
+                <th>MagError</th> 
+                <th>Location Source</th> 
+                <th>Mag Source</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <%if (quake.length >0){ %>
+            <% quake.forEach(function(row){ %>
+            <tr>
+              <td><%= row.id %></td>
+              <td><%= row.time %></td>
+              <td><%= row.latitude %></td>
+              <td><%= row.longitude %></td>
+              <td><%= row.depth %></td>
+              <td><%= row.mag %></td>
+              <td><%= row.magType %></td>
+              <td><%= row.gap %></td>
+              <td><%= row.place %></td>
+              <td><%= row.depthError %></td>
+              <td><%= row.magError %></td>
+              <td><%= row.locationSource %></td>
+              <td><%= row.magSource %></td>
+            </tr>
+            <% })}else{ %>
+              <tr>
+                  <td colspan="6">No Record Found</td>
+                  
+                </tr>
+              <% } %>
+          </tbody>
+
+    </table>
+</div>
+
+<%- include('partials/footer.ejs') -%>

@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') -%>
+<div class=del_selector>
+<form action="/del_confirm" method="POST">
+
+    <label for="del_quake" class="del_quake">Choose an earthquake by Reseach ID:</label>
+    <select name="id" id="id">
+        <%if (quake.length >0){ %>
+        <% quake.forEach(function(row){ %>
+        <option value='<%= row.id %>'><%= row.id %></option>
+        <% }) }%>
+    </select>  
+    <button type="submit">Delete</button>
+</form>
+        
+
+</div>
+
+
+<%- include('partials/footer.ejs') -%>
