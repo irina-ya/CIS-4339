@@ -1,0 +1,39 @@
+h1, h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+label {
+    display: vertical;
+    width:auto;
+    text-align: right;
+    font-family: Verdana;
+    font-size: small;
+    }
+
+.searchDiv {
+    text-align: center;
+}
+
+#curAbv{
+    border: 3px solid rgb(107, 209, 107);
+}
+
+ul {
+    margin: 5px;
+    padding: 0px;
+    list-style-type: circle;
+    }
+
+p{
+    font-family: Verdana;
+    text-align: center;
+}
+
+.rateList {
+    margin: 10px;
+}
+
+.registration_form{
+    text-align: center;
+    margin: 0 auto;
+}

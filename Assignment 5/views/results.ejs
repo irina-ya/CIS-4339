@@ -1,0 +1,8 @@
+<%- include('partials/header.ejs') -%>
+<div class="rateList">
+    <h1>1.00 <%= baseCur.base %> is equal to:</h1>
+    <% allRates.forEach(res => { Object.entries(res).forEach(([key, value]) => { %>
+        <ul><li><%=(key + ": " + value.toFixed(2) )%></li></ul> 
+          <%      }) }) %>
+</div>
+<%- include('partials/footer.ejs') -%>
