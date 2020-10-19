@@ -67,7 +67,6 @@ app.post("/del_confirm", async (req, res) => {
 
 app.post("/result", async (req, res) => {
     try {
-        //delete the quake based on ID
         const quake = await quakes.find({});
         const search = await quakes.find(req.body);
         console.log(search.length)
