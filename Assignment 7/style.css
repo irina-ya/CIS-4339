@@ -1,0 +1,42 @@
+.container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+button{
+    margin-left: 25%;
+}
+
+.phys{
+    align-self: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(207, 97, 97);
+  }
+
+.mag{
+    align-self: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(93, 138, 190);
+  }
+
+  tr:nth-child(even) {background-color: #8e9fa7;}
+
+table, th, td {
+    align-self: center;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+  }
+
+h4 {
+    text-align: center;
+}
+

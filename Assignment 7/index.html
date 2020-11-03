@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" >
+        <h1>{{ pageName }}</h1>
+        <div class = "container">
+            <table>
+                <tr v-bind:class = StatusClass>
+                    <th>Spell Name</th>
+                    <th>Damage Amount</th>
+                </tr>
+            
+                <tr v-if="!hidePhys" v-bind:class = StatusClass id="physical" v-for="spell in dmgPhys">
+                    <td> {{ spell.spell }} </td>
+                    <td> {{ spell.dmg }} </td>
+                </tr>
+
+                <tr v-if="!hideMag" v-bind:class = StatusClass id="magical" v-for="spell in dmgMag">
+                    <td> {{ spell.spell }} </td>
+                    <td> {{ spell.dmg }} </td>
+                </tr>
+            </table>
+            
+        </div>
+        <h4 v-if="!hidePhys">Total Possible Damage: {{ totalsumPhys }}</h4>
+        <h4 v-if="!hideMag">Total Possible Damage: {{ totalsumMag }}</h4>
+
+    <button type="button" v-on:click="getPhys"> 
+        Show Physical Damage Spells </button>
+
+    <button type="button" v-on:click="getMag"> 
+        Show Magical Damage Spells </button>
+
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
