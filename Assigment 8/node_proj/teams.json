@@ -1,0 +1,118 @@
+[
+    { 
+    "division": "AFC East",
+    "name": "Buffalo Bills",
+    "wins": 7,
+    "loses": 2,
+    "ties": 0
+},
+{ 
+    "division": "AFC East",
+    "name": "Miami Dolphins",
+    "wins": 5,
+    "loses": 3,
+    "ties": 0
+},
+{ 
+    "division": "AFC East",
+    "name": "New England Patriots",
+    "wins": 3,
+    "loses": 5,
+    "ties": 0
+},
+{ 
+    "division": "AFC East",
+    "name": "New York Jets",
+    "wins": 0,
+    "loses": 9,
+    "ties": 0
+},
+
+
+{ 
+    "division": "AFC North",
+    "name": "Pittsburgh Steelers",
+    "wins": 8,
+    "loses": 0,
+    "ties": 0
+},
+{ 
+    "division": "AFC North",
+    "name": "Cleveland Browns",
+    "wins": 5,
+    "loses": 3,
+    "ties": 0
+},
+{ 
+    "division": "AFC North",
+    "name": "Cincinnati Bengals",
+    "wins": 2,
+    "loses": 5,
+    "ties": 1
+},
+{ 
+    "division": "AFC North",
+    "name": "Baltimore Ravens",
+    "wins": 6,
+    "loses": 2,
+    "ties": 0
+},
+
+{ 
+    "division": "AFC South",
+    "name": "Houston Texans",
+    "wins": 2,
+    "loses": 6,
+    "ties": 0
+},
+{ 
+    "division": "AFC South",
+    "name": "Indianapolis Colts",
+    "wins": 6,
+    "loses": 3,
+    "ties": 0
+},
+{ 
+    "division": "AFC South",
+    "name": "Jacksonville Jaguars",
+    "wins": 1,
+    "loses": 7,
+    "ties": 0
+},
+{ 
+    "division": "AFC South",
+    "name": "Tennessee Titans",
+    "wins": 6,
+    "loses": 3,
+    "ties": 0
+},
+
+{ 
+    "division": "AFC West",
+    "name": "Denver Broncos",
+    "wins": 3,
+    "loses": 5,
+    "ties": 0
+},
+{ 
+    "division": "AFC West",
+    "name": "Kansas City Chiefs",
+    "wins": 8,
+    "loses": 1,
+    "ties": 0
+},
+{ 
+    "division": "AFC West",
+    "name": "Las Vegas Raiders",
+    "wins": 5,
+    "loses": 3,
+    "ties": 0
+},
+{ 
+    "division": "AFC West",
+    "name": "Los Angeles Chargers",
+    "wins": 2,
+    "loses": 6,
+    "ties": 0
+}
+]
