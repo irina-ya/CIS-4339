@@ -1,5 +1,7 @@
 How to run the application:
 
+##DB is local due to class project reqs##
+
 ##Database set up
 Open the mongodb shell or your preferred GUI manager 
 Create a database in Mongo called “FinalProjectDB”
